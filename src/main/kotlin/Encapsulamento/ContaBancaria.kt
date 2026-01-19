@@ -13,9 +13,19 @@ class ContaBancaria {
     // Público (padrão) - acessível de qualquer lugar
     var titular: String = ""
 
+    constructor(numeroConta: String, agencia: String, titular: String){
+        this.numeroConta = numeroConta
+        this.agencia = agencia
+        this.titular = titular
+    }
+
     // Getter personalizado
     fun getSaldoFormatado(): String {
         return "R$ $saldo"
+    }
+
+    fun getSaldo(): Double {
+        return saldo
     }
 
     // Métodos públicos para manipular saldo (controle de acesso)

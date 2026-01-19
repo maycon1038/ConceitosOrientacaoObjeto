@@ -18,6 +18,6 @@ class Retangulo(val largura: Double, val altura: Double) : Forma(), Desenhavel{
     }
 
     override fun redimensionar(escala: Double) {
-        println("Redimensionando Retangulo para largura: ${largura * escala} e altura: ${altura * escala}")
+        println("Redimensionando Retangulo para largura ${largura * escala} e altura ${altura * escala}")
     }
 }

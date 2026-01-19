@@ -5,7 +5,7 @@ package Encapsulamento
 /*Usamos private, protected, internal e public para controlar acesso*/
 // Uso
 fun main() {
-    val conta = ContaBancaria()
+    val conta = ContaBancaria("12345", "001", "João Silva")
     conta.titular = "João"
     conta.depositar(1000.0)
     conta.sacar(500.0)
