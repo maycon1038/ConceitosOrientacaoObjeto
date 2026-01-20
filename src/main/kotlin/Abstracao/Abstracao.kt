@@ -32,8 +32,9 @@ fun main() {
     val erro = ResultadoOperacao.Erro("Erro ao processar operação", null)
 
     processarResultado(carregando)
-
+    // Trabalhando com a classe abstrata Funcionario
     val funcionarios: List<Funcionario> = listOf(gerente, desenvolvedor)
+
 
     funcionarios.forEach {
         it.exibirDados()
@@ -45,6 +46,7 @@ fun main() {
     val trabalhadores: List<Trabalhavel> = listOf(gerente, desenvolvedor)
     trabalhadores.forEach {
         it.trabalhar()
+        it.fazerPausa()
         println()
     }
 
