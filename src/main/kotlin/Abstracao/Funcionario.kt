@@ -8,6 +8,13 @@ abstract class Funcionario(
     // PROPRIEDADE ABSTRATA - cada subclasse deve implementar
       abstract val funcao: String
 
+      companion object {
+
+          fun calcularImposto(salario: Double): Double {
+              return salario * 0.2
+          }
+      }
+
 
     // Método concreto - já tem implementação
     fun exibirDados() {

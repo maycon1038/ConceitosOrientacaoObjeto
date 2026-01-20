@@ -22,20 +22,22 @@ fun main() {
 
     System.setOut(java.io.PrintStream(System.`out`, true, "UTF-8"))
 
+    println(Funcionario.calcularImposto(47.0))
+
     val gerente = Gerente("Maria", "456.789.123-00", 8000.0, 2000.0)
     val desenvolvedor = Desenvolvedor("Carlos", "987.654.321-00", 5000.0, 24, "Kotlin")
 
     val carregando = ResultadoOperacao.Carregando;
     val sucesso = ResultadoOperacao.Sucesso("Operação concluída", 200);
-    val erro = ResultadoOperacao.Erro("Erro ao processar operação", Throwable("Erro durante o processo"))
+    val erro = ResultadoOperacao.Erro("Erro ao processar operação", null)
 
     processarResultado(carregando)
 
     val funcionarios: List<Funcionario> = listOf(gerente, desenvolvedor)
 
-    funcionarios.forEach { funcionario ->
-        funcionario.exibirDados()
-        funcionario.calcularSalario()
+    funcionarios.forEach {
+        it.exibirDados()
+        it.calcularSalario()
         println()
     }
 
@@ -49,7 +51,7 @@ fun main() {
 
     processarResultado(sucesso)
 
-    processarResultado(erro)
+  //  processarResultado(erro)
 
 
 
