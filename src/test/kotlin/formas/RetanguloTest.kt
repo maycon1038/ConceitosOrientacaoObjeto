@@ -1,5 +1,6 @@
 package formas
 
+import Polimorfismo.Figura
 import Polimorfismo.Retangulo
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.DisplayName
@@ -28,7 +29,7 @@ class RetanguloTest {
     @DisplayName("Verifica se o nome da forma é Retângulo")
     fun getNome() {
         val retangulo = Retangulo(4.0, 6.0)
-        assertEquals("Retangulo", retangulo.nome, "O nome da forma deveria ser Retângulo")
+        assertEquals(Figura.RETANGULO.name, retangulo.nome, "O nome da forma deveria ser Retângulo")
     }
 
     @Test

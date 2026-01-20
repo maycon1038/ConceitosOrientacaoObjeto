@@ -3,7 +3,7 @@ package Polimorfismo
 // Implementações diferentes da mesma interface
 class Retangulo(val largura: Double, val altura: Double) : Forma(), Desenhavel{
 
-    override val nome: String = "Retangulo"
+    override val nome: String = Figura.RETANGULO.name
 
     override fun calcularArea(): Double {
         return largura * altura

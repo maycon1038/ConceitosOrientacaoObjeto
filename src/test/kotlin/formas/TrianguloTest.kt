@@ -1,5 +1,6 @@
 package formas
 
+import Polimorfismo.Figura
 import Polimorfismo.Triangulo
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test // Ou org.junit.Test para JUnit 4
@@ -12,7 +13,7 @@ class TrianguloTest {
     @DisplayName("Verifica o nome retornado pelo método getNome é 'Triangulo'")
     fun getNome() {
         val triangulo = Triangulo(6.0, 4.0)
-        assertEquals("Triangulo", triangulo.nome)
+        assertEquals(Figura.TRIANGULO.name, triangulo.nome)
     }
 
     @Test

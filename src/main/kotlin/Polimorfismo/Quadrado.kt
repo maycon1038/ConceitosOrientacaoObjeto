@@ -3,7 +3,7 @@ package Polimorfismo
 // Classe que implementa múltiplos comportamentos
 class Quadrado(val lado: Double) : Forma(), Desenhavel {
 
-    override val nome: String = "Quadrado"
+    override val nome: String = Figura.QUADRADO.name
 
     override fun calcularArea(): Double = lado * lado
     override fun calcularPerimetro(): Double = 4 * lado

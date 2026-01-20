@@ -2,7 +2,7 @@ package Polimorfismo
 
 class Triangulo(val base: Double, val altura: Double) : Forma() {
 
-    override val nome: String = "Triangulo"
+    override val nome: String = Figura.TRIANGULO.name
 
     override fun calcularArea(): Double {
         return (base * altura) / 2

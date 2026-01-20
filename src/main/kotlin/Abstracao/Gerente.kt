@@ -10,7 +10,7 @@ class Gerente(
 
     override val senha: String = "123456" // Em um caso real, seria hash
     // IMPLEMENTAÇÃO DA PROPRIEDADE ABSTRATA
-    override val funcao: String = "Gerente"
+    override val funcao: String = Cargo.GERENTE.name
 
     override fun calcularSalario(): Double {
         return salarioBase + bonus

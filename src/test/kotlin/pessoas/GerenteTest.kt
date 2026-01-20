@@ -1,5 +1,6 @@
 package pessoas
 
+import Abstracao.Cargo
 import Abstracao.Gerente
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.DisplayName
@@ -35,7 +36,7 @@ class GerenteTest {
     @DisplayName("Deve retornar a função correta do gerente")
     fun getFuncao() {
         val gerente = Gerente("Maria", "456.789.123-00", 8000.0, 2000.0)
-        assertEquals("Gerente", gerente.funcao)
+        assertEquals(Cargo.GERENTE.name, gerente.funcao)
     }
 
     @Test

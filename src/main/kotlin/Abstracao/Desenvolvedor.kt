@@ -8,7 +8,7 @@ class Desenvolvedor(
     val linguagem: String
 ) : Funcionario(nome, cpf, salarioBase), Trabalhavel {
     // IMPLEMENTAÇÃO DIFERENTE
-    override val funcao: String = "Desenvolvedor $linguagem"
+    override val funcao: String = Cargo.DEV.name
 
     override fun calcularSalario(): Double {
         val valorHoraExtra = salarioBase / 160 // 160 horas mensais

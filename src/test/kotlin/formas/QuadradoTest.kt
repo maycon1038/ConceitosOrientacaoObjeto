@@ -1,5 +1,6 @@
 package formas
 
+import Polimorfismo.Figura
 import Polimorfismo.Quadrado
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.DisplayName
@@ -28,7 +29,7 @@ class QuadradoTest {
     @DisplayName("Verifica se o nome da forma é Quadrado")
     fun getNome() {
         val quadrado = Quadrado(4.0)
-        assertEquals("Quadrado", quadrado.nome, "O nome da forma deveria ser Quadrado")
+        assertEquals(Figura.QUADRADO.name, quadrado.nome, "O nome da forma deveria ser Quadrado")
     }
 
     @Test

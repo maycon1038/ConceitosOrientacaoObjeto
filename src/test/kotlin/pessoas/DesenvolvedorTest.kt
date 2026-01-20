@@ -1,5 +1,6 @@
 package pessoas
 
+import Abstracao.Cargo
 import Abstracao.Desenvolvedor
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.DisplayName
@@ -27,7 +28,7 @@ class DesenvolvedorTest {
     @DisplayName("Deve retornar a função correta baseada na linguagem de programação")
     fun getFuncao() {
         val dev = Desenvolvedor("João", "123.456.789-00", 8000.0, 10, "Kotlin")
-        assertEquals("Desenvolvedor Kotlin", dev.funcao)
+        assertEquals(Cargo.DEV.name, dev.funcao)
     }
 
     @Test

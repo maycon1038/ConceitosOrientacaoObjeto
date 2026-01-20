@@ -1,6 +1,7 @@
 package formas
 
 import Polimorfismo.Circulo
+import Polimorfismo.Figura
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
@@ -12,7 +13,7 @@ class CirculoTest {
     @DisplayName("Verifica o nome retornado pelo método getNome é 'Circulo'")
     fun getNome() {
         val circulo = Circulo(5.0)
-        assertEquals("Circulo", circulo.nome)
+        assertEquals(Figura.CIRCULO.name, circulo.nome)
     }
 
     @Test

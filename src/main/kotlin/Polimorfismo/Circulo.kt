@@ -2,7 +2,7 @@ package Polimorfismo
 
 class Circulo(val raio: Double) : Forma() {
 
-    override val nome: String = "Circulo"
+    override val nome: String = Figura.CIRCULO.name
 
     override fun calcularArea(): Double {
         return Math.PI * raio * raio
