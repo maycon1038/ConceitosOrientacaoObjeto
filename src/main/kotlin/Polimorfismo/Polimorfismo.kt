@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets
 fun main() {
     // Forçar UTF-8 no programa
     // Forçar UTF-8 no console de saída
-    System.setOut(java.io.PrintStream(System.`out`, true, "UTF-8"))
+      System.setOut(java.io.PrintStream(System.`out`, true, "UTF-8"))
 
 
     val formas: List<Forma> = listOf(
